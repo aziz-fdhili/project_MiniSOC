@@ -1,25 +1,25 @@
 # MiniSOC
 
-Outil local de supervision défensive pour laboratoire : il lit des journaux SSH et HTTP, les convertit en événements d'un format commun, applique des règles de corrélation et présente les résultats dans un tableau de bord, avec historique SQLite et export CSV.
+A local defensive monitoring tool for laboratory use: it reads SSH and HTTP logs, converts them into events in a common format, applies correlation rules and displays the results in a dashboard, with a SQLite history and CSV export.
 
-## Cadre d'utilisation
+## Scope of use
 
-MiniSOC est un projet pédagogique destiné à un usage local et défensif. Une alerte est un indice documenté qui aide à choisir quoi vérifier en premier ; elle ne prouve pas qu'une attaque a réussi. L'outil n'installe aucun agent, n'accède à aucune machine distante, ne bloque rien, ne réagit pas automatiquement et ne collecte aucune donnée en production. Les journaux utilisés sont synthétiques.
+MiniSOC is an educational project intended for local, defensive use. An alert is a documented indication that helps decide what to check first; it does not prove that an attack succeeded. The tool installs no agent, accesses no remote machine, blocks nothing, does not respond automatically and does not collect any production data. The logs used are synthetic.
 
-## Semaine 1 : cadrage
+## Week 1: scoping
 
-Contenu actuel du dépôt :
+Current contents of the repository:
 
-* `docs/decisions.md` : choix d'architecture, formats de logs, normalisation des dates, schéma de données, gravité, export CSV et sources.
+* `docs/decisions.md`: architecture choices, log formats, date normalization, data schema, severity, CSV export and sources.
 
-Choix retenus :
+Choices made:
 
-* Application web locale, en Python avec Streamlit.
-* Base de données SQLite.
-* Logs SSH au format `auth.log` Debian/Ubuntu et logs HTTP au format Apache/Nginx Combined.
-* Dates stockées en UTC, au format ISO 8601.
-* Export CSV en UTF-8.
+* Local web application, in Python with Streamlit.
+* SQLite database.
+* SSH logs in the Debian/Ubuntu `auth.log` format and HTTP logs in the Apache/Nginx Combined format.
+* Dates stored in UTC, in ISO 8601 format.
+* CSV export in UTF-8.
 
-## Suite du projet
+## Next steps
 
-Ingestion et SQLite (semaine 2), règles et interface (semaine 3), scénarios et présentation (semaine 4). Ce README sera complété à chaque étape.
+Ingestion and SQLite (week 2), rules and interface (week 3), scenarios and presentation (week 4). This README will be updated at each stage.

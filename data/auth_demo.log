@@ -1,0 +1,12 @@
+Nov 25 18:30:01 ubuntu-server sshd[1201]: Failed password for admin from 192.0.2.10 port 52341 ssh2
+Nov 25 18:30:03 ubuntu-server sshd[1202]: Failed password for admin from 192.0.2.10 port 52342 ssh2
+Nov 25 18:30:05 ubuntu-server sshd[1203]: Failed password for root from 192.0.2.10 port 52343 ssh2
+Nov 25 18:31:10 ubuntu-server sshd[1204]: Failed password for invalid user test from 198.51.100.20 port 44120 ssh2
+Nov 25 18:31:12 ubuntu-server sshd[1205]: Invalid user hacker from 198.51.100.20 port 44121
+Nov 25 18:32:00 ubuntu-server sshd[1206]: Accepted password for student from 203.0.113.15 port 50122 ssh2
+Nov  1 09:15:30 ubuntu-server sshd[1207]: Failed password for admin from 192.0.2.30 port 43001 ssh2
+Nov 25 18:33:00 ubuntu-server sshd[1208]: Connection reset by 198.51.100.30 port 45000 [preauth]
+THIS IS NOT A VALID SSH LOG LINE
+
+
+
